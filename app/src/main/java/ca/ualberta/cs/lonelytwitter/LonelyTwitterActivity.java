@@ -42,8 +42,8 @@ public class LonelyTwitterActivity extends Activity {
 				setResult(RESULT_OK);
 				String text = bodyText.getText().toString();
 				saveInFile(text, new Date(System.currentTimeMillis()));
-				Tweet tweet = new importantTweet("");
-				Tweet NormalTweet = new NormalTweet("");
+				Tweet tweet = new importantTweet("",new Date(System.currentTimeMillis()));
+				Tweet NormalTweet = new NormalTweet("",new Date(System.currentTimeMillis()));
 				try{
 					tweet.setMessage("hello");
 				}

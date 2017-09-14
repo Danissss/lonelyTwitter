@@ -24,6 +24,10 @@ public abstract class Tweet implements TweetTable {
         return this.message;
     }
 
+    public Date getDate(){
+        return this.date;
+
+    }
     public void setMessage(String message ) throws TweetTooLongException{
         if(message.length() < 140 ){
             this.message = message;
