@@ -23,9 +23,12 @@ public abstract class Tweet implements TweetTable {
     public String getMessage(){
         return this.message;
     }
+    public void setDate (Date date){
+        this.date = date;
+    }
 
     public Date getDate(){
-        return this.date;
+        return date;
 
     }
     public void setMessage(String message ) throws TweetTooLongException{
@@ -38,10 +41,12 @@ public abstract class Tweet implements TweetTable {
         }
     }
 
+
+
     public abstract Boolean isImportant();
 
     @Override
     public String toString() {
-        return date.toString() + "|" + message;
+        return date.toString() + " | " + message;
     }
 }

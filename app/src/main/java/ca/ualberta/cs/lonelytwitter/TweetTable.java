@@ -7,6 +7,6 @@ import java.util.Date;
  */
 
 public interface TweetTable {
-    public String getMessage();
-    public Date getDate();
+    String getMessage();
+    Date getDate();
 }
